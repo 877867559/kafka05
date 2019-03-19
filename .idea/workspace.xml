@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="006b07d8-dc90-44da-ab9c-2e06de44f691" name="Default" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/hydra.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_11_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka05.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Demo1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/Kafka.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/api/FetchRequest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/api/MultiFetchRequest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/api/MultiFetchResponse.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/api/MultiProducerRequest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/api/OffsetRequest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/api/ProducerRequest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/api/RequestKeys.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/cluster/Broker.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/cluster/Cluster.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/cluster/Partition.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/common/ErrorMapping.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/common/OffsetOutOfRangeException.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/common/UnknownException.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/ConsumerConfig.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/ConsumerConnector.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/ConsumerIterator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/FetchedDataChunk.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/Fetcher.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/FetcherRunnable.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/KafkaMessageStream.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/PartitionTopicInfo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/SimpleConsumer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/TopicCount.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/ZookeeperConsumerConnector.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/storage/MemoryOffsetStorage.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/storage/OffsetStorage.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/consumer/storage/OracleOffsetStorage.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/log/Log.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/log/LogManager.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/log/LogStats.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/log/SegmentList.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/log/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/message/ByteBufferMessageSet.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/message/FileMessageSet.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/message/InvalidMessageException.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/message/Message.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/message/MessageLengthException.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/message/MessageSet.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/message/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/BoundedByteBufferReceive.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/BoundedByteBufferSend.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/ByteBufferSend.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/ConnectionConfig.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/Handler.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/InvalidRequestException.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/Request.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/SocketServer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/SocketServerStats.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/Transmission.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/network/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/producer/KafkaAppender.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/producer/KafkaProducer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/producer/async/AsyncKafkaProducer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/producer/async/EventHandler.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/producer/async/MissingConfigException.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/producer/async/ProducerConfig.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/producer/async/ProducerSendThread.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/producer/async/QueueClosedException.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/producer/async/QueueFullException.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/serializer/Serializer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/server/KafkaConfig.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/server/KafkaRequestHandlers.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/server/KafkaServer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/server/KafkaZooKeeper.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/server/MessageSetSend.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/server/MultiMessageSetSend.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/server/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/tools/ConsumerPerformance.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/tools/ConsumerShell.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/tools/ProducerPerformance.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/tools/ProducerShell.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/tools/SimpleConsumerPerformance.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/tools/SimpleConsumerShell.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/Annotations.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/DelayedItem.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/DumpLogSegments.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/IteratorTemplate.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/KafkaScheduler.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/Pool.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/Range.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/Throttler.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/Time.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/UpdateOffsetsInZK.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/Utils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/ZkUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka/utils/package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/other/kafka.log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/other/kafka/DeleteZKPath.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/other/kafka/TestKafkaAppender.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/other/kafka/TestLatestLogOffset.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/other/kafka/TestLinearWriteSpeed.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/other/kafka/TestLogPerformance.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/other/kafka/TestTruncate.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/other/kafka/TestZKConsumerOffsets.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/consumer/SimpleConsumerTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/consumer/TopicCountTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/consumer/ZookeeperConsumerConnectorTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/integration/AutoOffsetResetTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/integration/FetcherTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/integration/KafkaServerTestHarness.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/integration/LazyInitProducerTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/integration/PrimitiveApiTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/integration/ProducerConsumerTestHarness.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/log/LogManagerTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/log/LogTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/log/SegmentListTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/log4j/KafkaLog4jAppenderTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/message/BaseMessageSetTestCases.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/message/ByteBufferMessageSetTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/message/FileMessageSetTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/message/MessageTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/producer/AsyncProducerTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/producer/KafkaProducerTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/utils/MockTime.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/utils/UtilsTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/zk/EmbeddedZookeeper.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/zk/ZKEphemeralTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/zk/ZKLoadBalanceTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/unit/kafka/zk/ZooKeeperTestHarness.scala" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Demo1.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Demo1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogManager.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/log/LogManager.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>list</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="D:/eclipseWorkspace/es5.6work/elasticsearch-5.6.3/elasticsearch-5.6.3" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ehcache3-3.0.2/ehcache3-3.0.2" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../es-6/elasticsearch-6.0.1-2/elasticsearch-6.0.1" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../es-6/elasticsearch-6.0.1/elasticsearch-6.0.1" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../kafka2" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../kafka2.0" value="PREVIEW" />
+        <entry key="D:/scalaware/kafka-0.10.2.2-src-idea/kafka-0.10.2.2-src" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/scala/Demo1.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/kafka/Kafka.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/kafka/server/KafkaServer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/kafka/utils/Annotations.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/kafka/utils/Pool.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/kafka/consumer/ZookeeperConsumerConnector.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/kafka/producer/async/EventHandler.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/unit/kafka/TestUtils.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/unit/kafka/consumer/SimpleConsumerTest.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/scala/unit/kafka/zk/ZKLoadBalanceTest.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/unit/kafka/producer/AsyncProducerTest.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kafka0.5" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kafka0.5" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kafka0.5" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.101tec:zkclient:0.1.0" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="769" />
+    <option name="height" value="585" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="EasyMock&#9;PSI&#9;JAVA://org.easymock.EasyMock" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Demo1" />
+      <module name="kafka05" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../kafka-0.7/kafka-0.7" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="006b07d8-dc90-44da-ab9c-2e06de44f691" name="Default" comment="" />
+      <created>1552898808165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552898808165</updated>
+      <workItem from="1552898811091" duration="5023000" />
+      <workItem from="1552958400981" duration="554000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit test">
+      <created>1552958753602</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552958753602</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5577000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="3" visible="true" weight="0.3293944" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32890856" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="0" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22654155" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info id="UI Designer" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.31120944" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32890856" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20911528" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Messages" order="4" visible="true" weight="0.31120944" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297587" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="11" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="first commit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit test" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Demo1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/log/LogManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/log/Log.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/producer/KafkaProducer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/Kafka.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#609#631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/message/FileMessageSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="268" column="11" lean-forward="true" selection-start-line="268" selection-start-column="11" selection-end-line="268" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/utils/Annotations.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/message/ByteBufferMessageSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/server/KafkaServer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="79" column="51" lean-forward="true" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
+          <folding>
+            <element signature="e#616#646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/utils/ZkUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4850">
+          <caret line="227" column="18" selection-start-line="227" selection-start-column="18" selection-end-line="227" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/scala/lib/scala-library.jar!/scala/collection/Map.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/utils/Pool.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/scala/lib/scala-library.jar!/scala/Option.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/scala/lib/scala-library.jar!/scala/collection/MapLike.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/scala/lib/scala-library.jar!/scala/Tuple2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/scala/lib/scala-library.jar!/scala/collection/convert/WrapAsScala.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/scala/lib/scala-library.jar!/scala/collection/convert/WrapAsJava.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/scala/lib/scala-library.jar!/scala/collection/JavaConversions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="123" selection-start-line="1" selection-start-column="123" selection-end-line="1" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/producer/async/EventHandler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="47" column="85" selection-start-line="47" selection-start-column="85" selection-end-line="47" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/101tec/zkclient/0.1.0/zkclient-0.1.0.jar!/org/I0Itec/zkclient/IZkStateListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/consumer/ZookeeperConsumerConnector.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="271" column="5" selection-start-line="271" selection-start-column="5" selection-end-line="271" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/unit/kafka/TestUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+          <folding>
+            <element signature="e#609#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/other/kafka/TestLatestLogOffset.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-157">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/unit/kafka/consumer/SimpleConsumerTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/unit/kafka/zk/ZKLoadBalanceTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/easymock/easymock/3.0/easymock-3.0.jar!/org/easymock/EasyMock.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.1/junit-4.1.jar!/junit/framework/TestCase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/unit/kafka/producer/AsyncProducerTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-850">
+          <caret line="52" column="69" selection-start-line="52" selection-start-column="69" selection-end-line="52" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Demo1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/kafka/log/LogManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.12.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>kafka05</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
